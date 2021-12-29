@@ -81,7 +81,7 @@ main {
   font-size: 12px;
   font-family: Courier, monospace;
   font-weight: 600;
-  color: #999;
+  color: #ddd;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
