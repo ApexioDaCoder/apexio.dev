@@ -21,6 +21,9 @@ export default function Home() {
       <h1>
         Welcome to <strong>apexio.dev</strong>!
       </h1>
+      <p>
+        This is still being developed.
+      </p>
       <div className="counter">
         <span>Counter:</span>
         {isSyncing && <em>...</em>}
