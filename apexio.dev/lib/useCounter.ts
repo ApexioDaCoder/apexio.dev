@@ -33,7 +33,7 @@ export default function useCounter(): [
       })
       .catch((e) => {
         console.error(e);
-        if (localStorage.getItem("count")==null) {
+        if (localStorage.getItem("count") == null) {
           localStorage.setItem("count", count);
         }
         setCount(parseInt(localStorage.getItem("count") || "0"));

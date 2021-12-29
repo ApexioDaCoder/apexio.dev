@@ -1,5 +1,5 @@
-@import url('./reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..800&display=swap');
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300..800&display=swap");
 
 main {
   display: flex;
@@ -7,7 +7,7 @@ main {
   justify-content: center;
   height: 100vh;
   background-color: #000;
-  font-family: 'Recursive', monospace;
+  font-family: "Recursive", monospace;
 }
 
 .page h1 {
@@ -117,5 +117,5 @@ main {
 }
 
 .page .copyinfo a:hover {
-  color: #D63369;
+  color: #d63369;
 }

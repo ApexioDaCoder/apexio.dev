@@ -1,6 +1,12 @@
-import React, { FC } from 'react'
+import React, { FC } from "react";
 
-export default function App({ Page, pageProps }: { Page: FC, pageProps: Record<string, unknown> }) {
+export default function App({
+  Page,
+  pageProps,
+}: {
+  Page: FC;
+  pageProps: Record<string, unknown>;
+}) {
   return (
     <main>
       <head>
@@ -8,5 +14,5 @@ export default function App({ Page, pageProps }: { Page: FC, pageProps: Record<s
       </head>
       <Page {...pageProps} />
     </main>
-  )
+  );
 }

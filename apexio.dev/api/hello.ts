@@ -1,5 +1,5 @@
-import type { APIHandler } from 'aleph/types.d.ts'
+import type { APIHandler } from "aleph/types.d.ts";
 
 export const handler: APIHandler = ({ response }) => {
-  response.json({ name: 'apexio.dev' })
-}
+  response.json({ name: "apexio.dev" });
+};
