@@ -21,13 +21,15 @@ main {
 
 .page h1 strong {
   font-weight: 700;
+  font-size: 16px;
 }
 
 .page p {
   margin: 0;
   line-height: 1.5;
+  font-size: 0.9em;
   text-align: center;
-  color: #333;
+  color: #aaa;
 }
 
 .logo + p {
@@ -98,4 +100,13 @@ main {
   margin-top: 30px;
   font-size: 14px;
   color: #aaa;
+}
+
+.page .copyinfo a {
+  transition: all 0.1s ease-in-out;
+  color: #fff;
+}
+
+.page .copyinfo a:hover {
+  color: #D63369;
 }

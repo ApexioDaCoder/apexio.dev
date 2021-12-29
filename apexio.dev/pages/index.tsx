@@ -19,11 +19,9 @@ export default function Home() {
         <Logo />
       </p>
       <h1>
-        Welcome to <strong>apexio.dev</strong>!
+        Welcome to <strong>APEXIO.DEV</strong>!
       </h1>
-      <p>
-        This is still being developed.
-      </p>
+      <p>This website is still being developed.</p>
       <div className="counter">
         <span>Counter:</span>
         {isSyncing && <em>...</em>}
@@ -42,7 +40,21 @@ export default function Home() {
         <button onClick={decrease}>-</button>
         <button onClick={increase}>+</button>
       </div>
-      <p className="copyinfo">Built by Aleph.js in Deno {version}</p>
+      <p className="copyinfo">
+        Built by{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://alephjs.org/"
+        >
+          Aleph.js
+        </a>{" "}
+        in{" "}
+        <a target="_blank" rel="noopener noreferrer" href="https://deno.land/">
+          Deno {version}
+        </a>
+        .
+      </p>
     </div>
   );
 }
