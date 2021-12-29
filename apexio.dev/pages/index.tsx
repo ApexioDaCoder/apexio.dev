@@ -13,6 +13,7 @@ export default function Home() {
       <head>
         <title>Hello World - apexio.dev</title>
         <link rel="stylesheet" href="../style/index.css" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
       </head>
       <p className="logo">
         <Logo />
