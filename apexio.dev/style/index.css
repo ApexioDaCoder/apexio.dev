@@ -34,6 +34,11 @@ main {
 
 .logo + p {
   margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.logo-img {
+  margin-bottom: 18px;
 }
 
 .counter {
@@ -52,6 +57,10 @@ main {
 
 .counter:hover {
   border-color: #ccc;
+}
+
+.counter span {
+  font-size: 0.9em;
 }
 
 .counter em {
