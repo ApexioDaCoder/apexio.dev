@@ -86,8 +86,8 @@ main {
 
 .counter button:hover {
   color: #000;
-  border-color:#ccc;
-  background-color: #ccc;
+  border-color: #fff;
+  background-color: #ff;
 }
 
 .counter button + button {
