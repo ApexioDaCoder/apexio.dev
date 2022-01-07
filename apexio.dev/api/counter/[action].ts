@@ -1,17 +1,24 @@
 import type { APIHandler } from "aleph/types.d.ts";
+import { connect } from "https://deno.land/x/redis/mod.ts";
 
-export const handler: APIHandler = ({ router, response }) => {
-  let count = parseInt(localStorage.getItem("count") || "0");
+const redis = await connect({
+  hostname: Deno.env.get("REDIS_URL"),
+  port: 17158,
+  password: Deno.env.get("REDIS_PASS")
+});
+
+export const handler: APIHandler = async ({ router, response }) => {
+  let count = parseInt(await redis.get("count") || "0");
 
   switch (router.params["action"]) {
     case "increase":
       count++;
-      localStorage.setItem("count", count.toString());
+      await redis.set("count", count.toString());
       response.json({ count });
       break;
     case "decrease":
       count--;
-      localStorage.setItem("count", count.toString());
+      await redis.set("count", count.toString());
       response.json({ count });
       break;
     default:

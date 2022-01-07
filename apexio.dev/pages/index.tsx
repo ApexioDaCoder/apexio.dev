@@ -45,9 +45,9 @@ export default function Home() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://alephjs.org/"
+          href="https://apexio.dev/"
         >
-          Aleph.js
+          Apexio
         </a>{" "}
         in{" "}
         <a target="_blank" rel="noopener noreferrer" href="https://deno.land/">
