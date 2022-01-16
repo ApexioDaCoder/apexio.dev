@@ -12,7 +12,7 @@ export default function Home() {
     <div className="page">
       <head>
         <title>Hello World - apexio.dev</title>
-        <link rel="stylesheet" href="../style/index.css" />
+        <link rel="stylesheet" href="/style/index.css" />
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
       </head>
       <p className="logo">
@@ -42,11 +42,7 @@ export default function Home() {
       </div>
       <p className="copyinfo">
         Built by{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://apexio.dev/"
-        >
+        <a target="_blank" rel="noopener noreferrer" href="https://apexio.dev/">
           Apexio
         </a>{" "}
         in{" "}

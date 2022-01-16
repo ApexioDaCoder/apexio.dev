@@ -6,7 +6,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #000;
+  background-color: #0b1120;
   font-family: "Recursive", monospace;
 }
 
@@ -48,11 +48,12 @@ main {
   width: 270px;
   height: 48px;
   margin: 15px auto;
-  border: 1px solid #eee;
+  /*border: 1px solid #eee;*/
   color: #eee;
+  box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 5%), 0 1px 2px 0 rgb(0 0 0/0.05);
   border-radius: 6px;
   transition: border-color 0.15s ease-in;
-  background-color: #111;
+  background-color: rgb(30, 41, 59);
 }
 
 .counter:hover {
@@ -85,7 +86,9 @@ main {
   width: 18px;
   height: 18px;
   border-radius: 3px;
-  border: 1px solid #ddd;
+  /*border: 1px solid #ddd;*/
+  background: rgb(51, 65, 85);
+  box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 5%), 0 1px 2px 0 rgb(0 0 0/0.05);
   line-height: 1;
   font-size: 12px;
   font-family: Courier, monospace;
@@ -96,9 +99,8 @@ main {
 }
 
 .counter button:hover {
-  color: #000;
-  border-color: #fff;
-  background-color: #fff;
+  color: #777;
+  background-color: rgb(41, 55, 75);
 }
 
 .counter button + button {
