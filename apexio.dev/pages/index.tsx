@@ -4,7 +4,6 @@ import Logo from "~/components/logo.tsx";
 import useCounter from "~/lib/useCounter.ts";
 import FlipNumbers from "react-flip-numbers";
 
-export default function Home() {
   const [count, isSyncing, increase, decrease] = useCounter();
   const version = useDeno(() => Deno.version.deno);
 
