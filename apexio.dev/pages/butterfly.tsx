@@ -5,9 +5,7 @@ export default function Butterfly() {
   useEffect(() => {
     (async () => {
       if (canvasRef.current.loaded) return;
-      const THREE = await import(
-        "https://deno.land/x/threejs_4_deno@v121/src/Three.js"
-      );
+      const THREE = await import("https://cdn.skypack.dev/three");
       const debounce = (callback, duration) => {
         var timer;
         return function (event) {
