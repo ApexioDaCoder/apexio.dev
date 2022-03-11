@@ -5,7 +5,7 @@ export default function Butterfly() {
   useEffect(() => {
     (async () => {
       if (canvasRef.current.loaded) return;
-      const THREE = await import("https://cdn.skypack.dev/three");
+      const THREE = await import("https://esm.sh/three");
       const debounce = (callback, duration) => {
         var timer;
         return function (event) {
@@ -322,11 +322,17 @@ export default function Butterfly() {
   }, []);
 
   return (
-    <canvas
-      className="canvas-webgl"
-      id="canvas-webgl"
-      ref={canvasRef}
-      style={{ position: "fixed", zIndex: 1, top: "0", left: "0" }}
-    ></canvas>
+    <>
+      <head>
+        <title>Butterfly</title>
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+      </head>
+      <canvas
+        className="canvas-webgl"
+        id="canvas-webgl"
+        ref={canvasRef}
+        style={{ position: "fixed", zIndex: 1, top: "0", left: "0" }}
+      ></canvas>
+    </>
   );
 }
